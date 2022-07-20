@@ -1,0 +1,42 @@
+.home__information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedule--container {
+  border: 1px solid black;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 48px;
+  position: relative;
+  background-color: white;
+  top: -50px; 
+}
+
+.schedule__list {
+  margin-top: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.schedule__header {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.schedule {
+  width: calc(100% / 4);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid black;
+}
