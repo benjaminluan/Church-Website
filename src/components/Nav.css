@@ -1,0 +1,60 @@
+.nav {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 24px 160px;
+  transition: all 200ms ease-in;
+}
+
+.expand {
+  background-color: gray;
+  box-shadow: 0 0 20px 0 rgb(0 0 15 / 10%);
+}
+
+.expand .nav__link > a,
+.expand .nav__list > .nav__handler {
+  color: black;
+  transition: all 200ms ease-in;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__logo > img {
+  width: 100px;
+}
+
+.nav__logo > h3 {
+  color: white;
+  margin-left: 16px;
+  font-size: 20px;
+  text-align: left;
+  width: 250px;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__link {
+  margin: 0 24px;
+}
+
+.nav__handler {
+  padding: 0;
+  margin: 0 24px;
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
