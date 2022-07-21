@@ -13,9 +13,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Source Serif Pro", sans-serif;
+  font-family: "Gotham Light", sans-serif;
+  overflow-x: hidden;
 }
 
+@font-face {
+  font-family: "Gotham Bold";
+  src: url(./fonts/GothamBold.ttf);
+}
+
+@font-face {
+  font-family: "Gotham Light";
+  src: url(./fonts/GothamLight.ttf);
+}
+
+@font-face {
+  font-family: "Gotham Medium";
+  src: url(./fonts/GothamMedium_1.ttf);
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url(./fonts/GothamBook.ttf);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -23,6 +43,8 @@ code {
 
 .home {
   height: 100vh;
+  overflow-x: hidden;
+  position: relative;
 }
 
 li {
@@ -32,3 +54,4 @@ a {
   text-decoration: none;
   color: white;
 }
+
