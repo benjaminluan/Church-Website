@@ -24,15 +24,14 @@
 
 .schedule__header--main {
   font-size: 28px;
-  font-weight: 400;
   position: relative;
+  font-family: "Gotham Light", sans-serif;
 }
-
 
 .schedule__header--main::after {
   position: absolute;
   border-bottom: #c5c6ca ridge 1px;
-  bottom: 0;
+  bottom: -10%;
   left: 50%;
   width: 0%;
   content: "";
@@ -41,7 +40,7 @@
 .schedule__header--main::before {
   position: absolute;
   border-bottom: #c5c6ca ridge 1px;
-  bottom: 0;
+  bottom: -10%;
   right: 50%;
   content: "";
   width: 0;
@@ -82,6 +81,18 @@
   position: relative;
 }
 
-.schedule {
+.schedule__para--container {
   text-align: center;
 }
+.schedule__para--container > p {
+  margin: 8px 0;
+}
+
+@media (max-width: 1400px) {
+  .schedule--container {
+    max-width: 1000px;
+  }
+}
+
+
+

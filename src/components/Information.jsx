@@ -1,5 +1,6 @@
 import React from "react";
 import "./Information.css";
+import Map from "./Map";
 const Information = () => {
   return (
     <div className="home__information">
@@ -8,28 +9,37 @@ const Information = () => {
         <div className="schedule__list">
           <div className="schedule">
             <h4 className="schedule__header">Saturday Mass Times</h4>
-            <p className="schedule__para">5:30pm - New Church</p>
+            <div className="schedule__para--container">
+              <p className="schedule__para">5:30pm - New Church</p>
+            </div>
           </div>
           <div className="schedule">
             <h4 className="schedule__header">Sunday Mass Times</h4>
-            <p className="schedule__para">7:30am - New Church</p>
-            <p className="schedule__para">9:30am - New Church</p>
-            <p className="schedule__para">11:30am - New Church</p>
-            <p className="schedule__para">1:30am - New Church</p>
+            <div className="schedule__para--container">
+              <p className="schedule__para">7:30am - New Church</p>
+              <p className="schedule__para">9:30am - New Church</p>
+              <p className="schedule__para">11:30am - New Church</p>
+              <p className="schedule__para">1:30am - New Church</p>
+            </div>
           </div>
           <div className="schedule">
             <h4 className="schedule__header">Thursday-Friday Mass Times</h4>
-            <p className="schedule__para">7:00pm - New Church</p>
+            <div className="schedule__para--container">
+              <p className="schedule__para">7:00pm - New Church</p>
+            </div>
           </div>
           <div className="schedule">
             <h4 className="schedule__header">Weekly Live Stream Times</h4>
-            <p className="schedule__para">Monday - Saturday: 8:00am</p>
-            <p className="schedule__para">Sunday: 9:30am and 11:30am</p>
+            <div className="schedule__para--container">
+              <p className="schedule__para">Monday - Saturday: 8:00am</p>
+              <p className="schedule__para">Sunday: 9:30am and 11:30am</p>
+            </div>
           </div>
         </div>
       </div>
       <div className="location">
         <h2 className="location__header">Our Location</h2>
+        <Map />
       </div>
     </div>
   );

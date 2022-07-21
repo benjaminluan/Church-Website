@@ -22,7 +22,7 @@ const Landing = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       changeSlide();
-    }, 20000);
+    }, 15000);
     return () => clearInterval(interval);
   }, []);
 
