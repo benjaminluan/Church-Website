@@ -4,7 +4,7 @@ const Information = () => {
   return (
     <div className="home__information">
       <div className="schedule--container">
-        <h2 className="schedule__header">Mass Schedule</h2>
+        <h2 className="schedule__header--main">Mass Schedule</h2>
         <div className="schedule__list">
           <div className="schedule">
             <h4 className="schedule__header">Saturday Mass Times</h4>
