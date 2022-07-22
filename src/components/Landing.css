@@ -54,6 +54,7 @@
   opacity: 0;
   animation: appear 2500ms ease-in forwards;
   font-family: "Gotham Book", sans-serif;
+  font-display: fallback;
 }
 .landing__header--container h1:nth-of-type(1) {
   animation-delay: 1s;
@@ -83,7 +84,8 @@
   font-size: 24px;
   text-align: center;
   margin-bottom: 16px;
-  font-family: "Gotham Light";
+  font-family: "Gotham Light", sans-serif;
+  font-display: fallback;
 }
 
 .landing__button--container {
