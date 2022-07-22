@@ -8,7 +8,7 @@ import Nav from "../components/Nav";
 const Home = () => {
   return (
     <div className="home">
-      {/* <Nav /> */}
+      <Nav />
       <Landing />
       <Information />
       <Events />
