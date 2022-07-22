@@ -7,7 +7,9 @@
 
 @font-face {
   font-family: "Gotham Light";
-  src: url("./fonts/GothamLight.ttf") format("truetype");
+  src: url("./fonts/GothamLight.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* @font-face {
