@@ -17,7 +17,7 @@ body {
   overflow-x: hidden;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Gotham Bold";
   src: url(./fonts/GothamBold.ttf);
 }
@@ -35,7 +35,7 @@ body {
 @font-face {
   font-family: "Gotham Book";
   src: url(./fonts/GothamBook.ttf);
-}
+} */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
