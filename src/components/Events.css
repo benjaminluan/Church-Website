@@ -1,0 +1,38 @@
+.events {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 500px;
+}
+.events__header {
+  position: relative;
+  font-size: 34px;
+}
+
+.events__header::after {
+  position: absolute;
+  border-bottom: #c5c6ca solid 2px;
+  bottom: -10px;
+  left: 50%;
+  width: 0%;
+  content: "";
+  animation: borderBottom 1s 2s ease-in forwards;
+}
+.events__header::before {
+  position: absolute;
+  border-bottom: #c5c6ca solid 2px;
+  bottom: -10px;
+  right: 50%;
+  content: "";
+  width: 0%;
+  animation: borderBottom 1s 2s ease-in forwards;
+}
+
+@keyframes borderBottom {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

@@ -103,4 +103,12 @@
   background-color: rgba(190, 187, 187, 0.63);
 }
 
+@media (max-width: 768px) {
+  .landing__info--para {
+    font-size: 20px;
+  }
 
+  .landing__header--container h1 {
+    font-size: 56px;
+  }
+}

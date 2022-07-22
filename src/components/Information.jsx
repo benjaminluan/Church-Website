@@ -38,8 +38,17 @@ const Information = () => {
         </div>
       </div>
       <div className="location">
-        <h2 className="location__header">Our Location</h2>
-        <Map />
+        <div className="location__left--container">
+          <h2 className="location__header">Location</h2>
+          <div className="location__address--container">
+            <p className="location__address">Norcross, GA 30093</p>
+            <p className="location__address">4545 Timmers Way</p>
+            <a href="/" className="location__direction">Get Directions <span>→</span></a>
+          </div>
+        </div>
+        <div className="map__container">
+          <Map />
+        </div>
       </div>
     </div>
   );

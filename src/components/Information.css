@@ -17,43 +17,15 @@
   margin-top: -136px;
   z-index: 1;
   border-radius: 25px;
-  box-shadow: -1px 1px 8px -1px #000000;
+  box-shadow: -1px 1px 6px -1px #000000;
   padding-bottom: 48px;
   margin-bottom: 96px;
 }
 
 .schedule__header--main {
-  font-size: 28px;
+  font-size: 36px;
   position: relative;
   font-family: "Gotham Light", sans-serif;
-}
-
-.schedule__header--main::after {
-  position: absolute;
-  border-bottom: #c5c6ca ridge 1px;
-  bottom: -10%;
-  left: 50%;
-  width: 0%;
-  content: "";
-  animation: borderBottom 1s 2s ease-in forwards;
-}
-.schedule__header--main::before {
-  position: absolute;
-  border-bottom: #c5c6ca ridge 1px;
-  bottom: -10%;
-  right: 50%;
-  content: "";
-  width: 0;
-  animation: borderBottom 1s 2s ease-in forwards;
-}
-
-@keyframes borderBottom {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
 }
 
 .schedule__list {
@@ -72,6 +44,7 @@
   font-style: italic;
   font-weight: 400;
   margin-bottom: 24px;
+  text-align: center;
 }
 .schedule {
   width: calc(100% / 4);
@@ -88,11 +61,111 @@
   margin: 8px 0;
 }
 
+.location {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 160px;
+
+  max-width: 1400px;
+}
+
+.location__left--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-right: 1px ridge #c5c6ca;
+  width: 100%;
+}
+
+.location__header {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+.location__address--container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.location__address {
+  font-size: 26px;
+}
+
+.location__direction {
+  color: black;
+  font-size: 26px;
+  text-decoration: underline;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.map__container {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+}
+
 @media (max-width: 1400px) {
   .schedule--container {
     max-width: 1000px;
   }
 }
 
+@media (max-width: 1000px) {
+  .schedule__header--main {
+    font-size: 30px;
+  }
+  .schedule__header {
+    font-size: 18px;
+  }
+  .location {
+    width: 100%;
+  }
+  .map__container {
+    min-height: 350px;
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+}
 
-
+@media (max-width: 768px) {
+  .map__container {
+    min-height: 300px;
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+  .schedule--container {
+    max-width: 600px;
+  }
+  .schedule__header--main {
+    font-size: 26px;
+  }
+  .schedule__header {
+    font-size: 14px;
+  }
+  .schedule__para--container > p {
+    font-size: 12px;
+  }
+  .location__address--container {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  .location__header {
+    font-size: 34px;
+  }
+  .location__address,
+  .location__direction {
+    font-size: 22px;
+  }
+}
