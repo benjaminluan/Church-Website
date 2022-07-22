@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,200;1,400&display=swap");
-@font-face {
+
+/* @font-face {
   font-family: "Gotham Bold";
   src: url(./fonts/GothamBold.ttf);
-}
+} */
 
 @font-face {
   font-family: "Gotham Light";
   src: url(./fonts/GothamLight.ttf);
 }
 
-@font-face {
+/* @font-face {
   font-family: "Gotham Medium";
   src: url(./fonts/GothamMedium_1.ttf);
 }
@@ -17,7 +18,8 @@
 @font-face {
   font-family: "Gotham Book";
   src: url(./fonts/GothamBook.ttf);
-}
+} */
+
 * {
   margin: 0;
   padding: 0;
