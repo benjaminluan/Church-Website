@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <div className="home">
       <Nav />
-      <Landing />
-      {/* <Information />
+      {/* <Landing /> */}
+      <Information />
       <Events />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };
