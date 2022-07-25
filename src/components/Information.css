@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .schedule--container {
@@ -90,6 +91,7 @@
 
 .location__address {
   font-size: 26px;
+  text-align: center;
 }
 
 .location__direction {
@@ -98,6 +100,7 @@
   text-decoration: underline;
   margin-top: 16px;
   width: 100%;
+  text-align: center;
 }
 
 .map__container {
@@ -140,8 +143,8 @@
 @media (max-width: 768px) {
   .map__container {
     min-height: 300px;
-    margin-left: 48px;
-    margin-right: 48px;
+    margin-left: unset;
+    margin-right: unset;
   }
   .schedule--container {
     max-width: 600px;
@@ -161,6 +164,9 @@
   .schedule__para--container > p {
     font-size: 16px;
   }
+  .location {
+    flex-direction: column;
+  }
   .location__address--container {
     margin-left: 20px;
     margin-right: 20px;
@@ -172,6 +178,16 @@
   .location__address,
   .location__direction {
     font-size: 22px;
+  }
+  .map__container {
+    width: 100%;
+    height: 100%;
+    justify-content: unset;
+  }
+  .map {
+    width: 100%;
+    max-width: unset;
+    height: 250px;
   }
   .schedule__list {
     flex-direction: column;
@@ -195,5 +211,13 @@
 @media (max-width: 550px) {
   .schedule--container {
     max-width: 90%;
+  }
+
+  .location__header {
+    font-size: 30px;
+  }
+  .location__address,
+  .location__direction {
+    font-size: 18px;
   }
 }
