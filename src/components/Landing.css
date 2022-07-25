@@ -55,7 +55,6 @@
   animation: appear 2500ms ease-in forwards;
   font-family: "Gotham", sans-serif;
   font-weight: 700;
-  font-display: fallback;
 }
 .landing__header--container h1:nth-of-type(1) {
   animation-delay: 1s;
@@ -85,7 +84,6 @@
   font-size: 24px;
   text-align: center;
   margin-bottom: 16px;
-  font-display: fallback;
 }
 
 .landing__button--container {
@@ -100,6 +98,7 @@
   padding: 22px;
   border-radius: 15px;
   transition: all 250ms ease;
+  margin-bottom: 32px;
 }
 .learn__button:hover {
   background-color: rgba(190, 187, 187, 0.63);
