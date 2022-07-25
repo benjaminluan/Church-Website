@@ -145,15 +145,21 @@
   }
   .schedule--container {
     max-width: 600px;
+    padding-top: unset;
+    padding-bottom: unset;
   }
   .schedule__header--main {
     font-size: 26px;
   }
+  .schedule__list {
+    margin-top: 16px;
+  }
   .schedule__header {
-    font-size: 14px;
+    font-size: 20px;
+    margin-bottom: 18px;
   }
   .schedule__para--container > p {
-    font-size: 12px;
+    font-size: 16px;
   }
   .location__address--container {
     margin-left: 20px;
@@ -166,5 +172,28 @@
   .location__address,
   .location__direction {
     font-size: 22px;
+  }
+  .schedule__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .schedule {
+    width: 100%;
+    padding: 40px;
+    margin-bottom: unset;
+  }
+  .schedule__list > .schedule:not(:last-child) {
+    border-right: none;
+    border-bottom: #c5c6ca ridge 1px;
+  }
+  .schedule__header--main {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .schedule--container {
+    max-width: 90%;
   }
 }

@@ -81,3 +81,20 @@
     width: 75px;
   }
 }
+@media (max-width: 550px) {
+  .nav__logo > h3 {
+    font-size: 14px;
+  }
+  .nav__logo > img {
+    width: 50px;
+  }
+  .nav__logo {
+    margin-left: 5%;
+  }
+  .nav__list--container {
+    margin-right: 4px;
+  }
+  .nav__handler {
+    margin-left: 5%;
+  }
+}
